@@ -1,0 +1,32 @@
+[
+  {
+    "file": "wallet.json",
+    "address": "0xe3D58b7175FBAbfAB422399A53f314C9cc4C9549",
+    "privateKey": "0x73582f7d4e7eb9d9eeba533612b29e96c125a7a36f8191910d01da20a1222164"
+  },
+  {
+    "file": "wallet_agent1.json",
+    "address": "0x6C985151cB8d7d8Ff8BA67A874dc7da596C2f9d2",
+    "privateKey": "0xf2e72eaa7be8a80d95e231d2654cb4bf9fc80af9d8632e6d23db1249b39fe41e"
+  },
+  {
+    "file": "wallet_agent2.json",
+    "address": "0x515570619C83680dC8F8F5c48E07594F58b54baA",
+    "privateKey": "0x042f0ddefaf4db324b7eb6732e630aa3140e041bbed6b38253ee8fff1ef381af"
+  },
+  {
+    "file": "wallet_agent3.json",
+    "address": "0x3fB7Ae3Fb7d94dbF0B0e364f858C8fE51cDdE77A",
+    "privateKey": "0x579d12cd69dcca236ae988aca5b13073a45096b46421bc2535508e17704468eb"
+  },
+  {
+    "file": "wallet_agent4.json",
+    "address": "0x3432820ef0417F9642944Fe37157148D380810D5",
+    "privateKey": "0x9938369f1a253bab967d09c3380879a6a0be46cde4d6772edfca3b1954e96664"
+  },
+  {
+    "file": "wallet_agent5.json",
+    "address": "0xe3D58b7175FBAbfAB422399A53f314C9cc4C9549",
+    "privateKey": "0x73582f7d4e7eb9d9eeba533612b29e96c125a7a36f8191910d01da20a1222164"
+  }
+]

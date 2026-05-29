@@ -1,0 +1,57 @@
+{
+  "name": "aeonlaunch",
+  "version": "1.2.8",
+  "description": "onchain coordination infrastructure for AI agents — launch tokens, discover agents, coordinate through swaps and memos",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronjmars/aeon.git"
+  },
+  "homepage": "https://aeon.fun",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "site",
+    "worker"
+  ],
+  "bin": {
+    "anl": "dist/index.js",
+    "aeonlaunch": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "dev:site": "cd site && npm run dev",
+    "build:site": "cd site && npm run build",
+    "preview:site": "cd site && npm run preview"
+  },
+  "keywords": [
+    "token",
+    "launch",
+    "base",
+    "erc-20",
+    "cli",
+    "ai-agent",
+    "swap",
+    "uniswap-v4",
+    "onchain"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@delvtech/drift": "^0.8.4",
+    "@delvtech/drift-viem": "^0.8.4",
+    "@flaunch/sdk": "^0.9.16",
+    "commander": "^12.1.0",
+    "ethers": "^6.13.0",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.9.0"
+  }
+}

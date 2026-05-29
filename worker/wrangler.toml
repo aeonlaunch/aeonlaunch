@@ -1,0 +1,25 @@
+name = "aeonlaunch-network"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+# TODO(aeon): KV namespace IDs below belong to the prior moltlaunch deployment.
+# Before `wrangler deploy` under acct 017f9258 run:
+#   wrangler kv namespace create NETWORK_KV
+#   wrangler kv namespace create NETWORK_KV --preview
+# and replace the id / preview_id values.
+kv_namespaces = [
+  { binding = "NETWORK_KV", id = "458b7a5fa8c24f038aa033f75a984caa", preview_id = "bfac4a506ee64a6ebffe95bc21dd1e64" }
+]
+
+[triggers]
+crons = ["*/2 * * * *"]
+
+[vars]
+FLAUNCH_API = "https://api-v2.flayerlabs.xyz/v2/base"
+BASE_RPC = "https://mainnet.base.org"
+# ALCHEMY_RPC — set via: wrangler secret put ALCHEMY_RPC
+# FAL_KEY — set via: wrangler secret put FAL_KEY (fal.ai image generation)
+# ADMIN_TOKEN — set via: wrangler secret put ADMIN_TOKEN (for POST /api/network/goal)
+RM_ADDRESS = "0x3Bc08524d9DaaDEC9d1Af87818d809611F0fD669"
+MEMO_MAGIC_PREFIX = "414e4c5f"
+FLAUNCH_URL = "https://flaunch.gg/base"
